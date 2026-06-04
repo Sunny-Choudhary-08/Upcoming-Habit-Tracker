@@ -277,11 +277,15 @@
                  progressBar.textContent = "0%";
                          progressBar.style.backgroundColor = "white";
                          progressBar.style.width = "0%"
-
-
-                        
+                         document.querySelector(".data1").textContent = "0|"
+                    document.querySelector(".data2").textContent = "0";
+       
             }
             else {
+
+                    document.querySelector(".data1").textContent = `${completedTask}|`
+                    document.querySelector(".data2").textContent = totalTask;
+
                        progressBar.textContent = `${((completedTask / totalTask)) * 100}%`;
                          progressBar.style.width = `${((completedTask / totalTask)) * 100}%`;
                          progressBar.style.backgroundColor = "blue"

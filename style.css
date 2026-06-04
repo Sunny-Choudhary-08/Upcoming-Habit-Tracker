@@ -93,6 +93,11 @@
     width: 80%;
 }
 
+.dataDiv {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
 .inputDiv button {
     border-radius: 10px;
     width: 15%;
