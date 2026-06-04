@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracker</title>
+    <title>Task Tracker</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
 </head>
 
 <body>
@@ -18,75 +19,86 @@
 
         <div class="firstHalf">
 
-            <div class="taskAdd">
-                <h1 class="taskHeading">Tasks</h1>
-                <!-- <button class="addTask"><i class="fa-solid fa-plus"></i></button> -->
+            <div class="header">
+
+                <div>
+                    <h1 class="taskHeading">Task Tracker</h1>
+                    <p class="quote">
+                        Stay consistent every day 🚀
+                    </p>
+                </div>
+
             </div>
 
             <div class="progress">
 
                 <div class="progressText">
-                    <h3 id="progressHeading">Progress</h3>
-                    <div class="dataDiv">
-                        <span class="data1"></span>
-                        <span class="data2"></span>
 
+                    <h3>Progress</h3>
+
+                    <div class="dataDiv">
+                        <span class="data1">0</span>
+                        <span>/</span>
+                        <span class="data2">0</span>
                         <p>Completed</p>
                     </div>
+
                 </div>
 
-                <div class="progressBar">0%</div>
+                <div class="progressContainer">
+                    <div class="progressBar">
+                        0%
+                    </div>
+                </div>
 
             </div>
 
             <div class="inputDiv">
-              
-                    <input type="text" placeholder="Enter the new task" id="inputHu">
-                    <button type="submit" value="submit" id="addBtn">Add</button>
-      
+
+                <input
+                    type="text"
+                    id="inputHu"
+                    placeholder="Add a new task..." />
+
+                <button id="addBtn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
             </div>
 
         </div>
 
         <div class="secondHalf">
-        
+
             <div class="allTasks">
-           <!-- <div class="task">
-                <input type="checkbox">
-                <h2 class="todoTask">Task to do</h2>
-            </div> -->
 
+                <!-- Dynamic Tasks -->
 
-             <!-- <div class="task">
-                <input type="checkbox">
-                <h2 class="todoTask">Task to do</h2>
+                <!--
+                <div class="task">
+
+                    <input type="checkbox">
+
+                    <h2 class="todoTask">
+                        Learn JavaScript
+                    </h2>
+
+                    <h4>completed</h4>
+
+                    <button>
+                        Delete
+                    </button>
+
+                </div>
+                -->
+
             </div>
-
-             <div class="task">
-                <input type="checkbox">
-                <h2 class="todoTask">Task to do</h2>
-            </div>
- -->
-
-            </div>
- 
-
-
 
         </div>
 
-        <hr>
-
-
-
-
-
-
-
-
     </div>
-
 
 </body>
 
 </html>
+
