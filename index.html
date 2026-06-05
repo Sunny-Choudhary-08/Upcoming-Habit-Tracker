@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Tracker</title>
+    <title>Habit Tracker</title>
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -22,9 +22,12 @@
             <div class="header">
 
                 <div>
-                    <h1 class="taskHeading">Task Tracker</h1>
+                    <h1 class="taskHeading">
+                        🚀 Habit Tracker
+                    </h1>
+
                     <p class="quote">
-                        Stay consistent every day 🚀
+                        Stay consistent every day and build powerful habits.
                     </p>
                 </div>
 
@@ -34,7 +37,10 @@
 
                 <div class="progressText">
 
-                    <h3>Progress</h3>
+                    <h3>
+                        <i class="fa-solid fa-chart-line"></i>
+                        Progress
+                    </h3>
 
                     <div class="dataDiv">
                         <span class="data1">0</span>
@@ -58,7 +64,7 @@
                 <input
                     type="text"
                     id="inputHu"
-                    placeholder="Add a new task..." />
+                    placeholder="Add a new habit..." />
 
                 <button id="addBtn">
                     <i class="fa-solid fa-plus"></i>
@@ -72,25 +78,7 @@
 
             <div class="allTasks">
 
-                <!-- Dynamic Tasks -->
-
-                <!--
-                <div class="task">
-
-                    <input type="checkbox">
-
-                    <h2 class="todoTask">
-                        Learn JavaScript
-                    </h2>
-
-                    <h4>completed</h4>
-
-                    <button>
-                        Delete
-                    </button>
-
-                </div>
-                -->
+                <!-- Dynamic Tasks Render Here -->
 
             </div>
 
@@ -101,4 +89,3 @@
 </body>
 
 </html>
-
